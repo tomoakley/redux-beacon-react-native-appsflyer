@@ -1,0 +1,13 @@
+.DS_STORE
+.idea
+.vscode
+npm-debug.log*
+_book
+coverage
+dist
+lib
+node_modules
+/targets
+/extensions
+/utils
+yarn-error.log

@@ -1,0 +1,10 @@
+{
+    "extends": ["plugin:@typescript-eslint/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "function-paren-newline": ["error", "never"]
+    },
+    "plugins": ["@typescript-eslint"]
+}

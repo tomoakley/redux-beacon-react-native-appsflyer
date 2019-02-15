@@ -7,14 +7,12 @@
   "engines": {
     "node": ">= 6"
   },
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
-    "prepublishOnly": "yarn run build",
+    "prepublishOnly": "yarn run lint && yarn run build",
+    "lint": "eslint --ext '.ts' src",
     "build": "tsc -p tsconfig.build.json"
   },
-  "peerDependencies": {
-    "redux-beacon": "2.x"
-  }
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tomoakley/rexux-beacon-react-native-appsflyer.git"
@@ -25,10 +23,21 @@
     "beacon",
     "appsflyer"
   ],
-  "author": "Tom Oakley",
-  "license": "ISC",
+  "author": "Tom Oakley <tom@tomoakley.me>",
   "bugs": {
     "url": "https://github.com/tomoakley/rexux-beacon-react-native-appsflyer/issues"
   },
-  "homepage": "https://github.com/tomoakley/rexux-beacon-react-native-appsflyer#readme"
+  "homepage": "https://github.com/tomoakley/rexux-beacon-react-native-appsflyer#readme",
+  "dependencies": {
+    "redux-beacon": "^2.0.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.3.0",
+    "@typescript-eslint/parser": "^1.3.0",
+    "eslint": "^5.13.0",
+    "typescript": "^3.3.3"
+  },
+  "peerDependencies": {
+    "redux-beacon": "2.x"
+  }
 }

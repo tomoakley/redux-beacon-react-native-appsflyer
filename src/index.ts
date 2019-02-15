@@ -1,3 +1,3 @@
-import AppsFlyer from './appsflyer';
+import AppsFlyer from './appsflyer'
 
-export default AppsFlyer;
+export default AppsFlyer

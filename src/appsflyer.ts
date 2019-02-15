@@ -1,13 +1,14 @@
-function reduxBeaconAppsFlyer() {
-  return function appsFlyerTarget(events) {
-    events.forEach(event => {
-      const { event: name, ...attrs } = event;
-      appsFlyer.trackEvent(name, attrs,
-        (result) => console.log(`${name} event sent to AppsFlyer successfully`, result),
-        (error) => console.log(`${name} event not sent to AppsFlyer`, error)
-      );
-    });
-  };
+import { Target } from 'redux-beacon'
+
+function reduxBeaconAppsFlyer(appsFlyer: any,
+    successCallback: (success: string) => any,
+    errorCallback: (error: Error) => any): Target {
+    return function appsFlyerTarget(events: any[]) {
+        events.forEach((event) => {
+            const { event: name, ...attrs } = event
+            appsFlyer.trackEvent(name, attrs, successCallback, errorCallback)
+        })
+    }
 }
 
-export default reduxBeaconAppsFlyer;
+export default reduxBeaconAppsFlyer
