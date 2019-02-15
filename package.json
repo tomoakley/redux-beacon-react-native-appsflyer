@@ -1,0 +1,34 @@
+{
+  "name": "redux-beacon-react-native-appsflyer",
+  "version": "1.0.0",
+  "description": "AppsFlyer integration for Redux Beacon",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": ">= 6"
+  },
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "yarn run build",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "peerDependencies": {
+    "redux-beacon": "2.x"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomoakley/rexux-beacon-react-native-appsflyer.git"
+  },
+  "keywords": [
+    "redux",
+    "redux",
+    "beacon",
+    "appsflyer"
+  ],
+  "author": "Tom Oakley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomoakley/rexux-beacon-react-native-appsflyer/issues"
+  },
+  "homepage": "https://github.com/tomoakley/rexux-beacon-react-native-appsflyer#readme"
+}
