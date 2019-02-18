@@ -6,9 +6,9 @@ An integration for sending events to AppsFlyer via Redux Beacon.
 
 ## Prerequisites
 
-To use this package, you need Redux Beacon set up on your app. Refer to their instructions [https://rangle.gitbook.io/redux-beacon/](here) for how to do that.
+To use this package, you need Redux Beacon set up on your app. Refer to their instructions [here](https://rangle.gitbook.io/redux-beacon/) for how to do that.
 
-You also need AppsFlyer SDK set up. To do this, follow their instructions for the React Native plugin [https://github.com/AppsFlyerSDK/react-native-appsflyer](here).
+You also need AppsFlyer SDK set up. To do this, follow their instructions for the React Native plugin [here](https://github.com/AppsFlyerSDK/react-native-appsflyer).
 
 Once Redux Beacon and AppsFlyer are both set up, you are ready to implement this package. First install it with npm or Yarn:
 
@@ -60,5 +60,5 @@ createMiddleware(eventMap, rbAF)
 
 ```
 
-More detailed set up for Redux Beacon can be found at their [https://rangle.gitbook.io/redux-beacon/](documentation).
+More detailed set up for Redux Beacon can be found at their [documentation](https://rangle.gitbook.io/redux-beacon/).
   
