@@ -6,7 +6,7 @@ function reduxBeaconAppsFlyer(appsFlyer: any,
     return function appsFlyerTarget(events: any[]) {
         events.forEach((event) => {
             const { event: name, ...attrs } = event
-            appsFlyer.trackEvent(name, attrs, successCallback, errorCallback)
+            appsFlyer.logEvent(name, attrs, successCallback, errorCallback)
         })
     }
 }
